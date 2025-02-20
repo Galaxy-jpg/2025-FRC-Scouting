@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Scouting</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <h1>2025 Scouting</h1>
+    <form id="teamInfo">
+      <label for="teamNumber">Team Number: </label><br>
+      <input type="text" name="teamNumber" value=""><br>
+      <label for="matchNumber">MatchNumber: </label><br>
+      <input type="number" name="matchNumber" value="">
+    </form>
+    <h2>Auto</h2>
+    <form id="auto">
+      <label for="leaveStart">Left starting area: </label>
+      <input type="checkbox" name="leaveStart" value="">
+      <div>
+        <label for="level1Auto">Level 1 / Trought: </label><br>
+        <button>+</button>
+        <input type="number" name="level1Auto" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="level2Auto">Level 2: </label><br>
+        <button>+</button>
+        <input type="number" name="level2Auto" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="level3Auto">Level 3: </label><br>
+        <button>+</button> 
+        <input type="number" name="level3Auto" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="level4Auto">Level 4: </label><br>
+        <button>+</button>
+        <input type="number" name="level4Auto" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="processorAuto">Algea in Processor: </label><br>
+        <button>+</button>
+        <input type="number" name="processorAuto" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="netAuto">Algea in the Net: </label><br>
+        <button>+</button>
+        <input type="number" name="netAuto" value="">
+        <button>-</button>
+      </div>
+    </form>
+    <h2>Telop</h2>
+    <form id="telop">
+      <div>
+        <label for="level1Telop">Level 1 / Trought: </label><br>
+        <button>+</button>
+        <input type="number" name="level1Telop" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="level2Telop">Level 2: </label><br>
+        <button>+</button>
+        <input type="number" name="level2Telop" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="level3Telop">Level 3: </label><br>
+        <button>+</button>
+        <input type="number" name="level3Telop" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="level4Telop">Level 4: </label><br>
+        <button>+</button>
+        <input type="number" name="level4Telop" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="processorTelop">Algea in Processor: </label><br>
+        <button>+</button>
+        <input type="number" name="processorTelop" value="">
+        <button>-</button>
+      </div>
+      <div>
+        <label for="netTelop">Algea in the Net: </label><br>
+        <button>+</button>
+        <input type="number" name="netTelop" value="">
+        <button>-</button>
+      </div>
+    </form>
+    <h2>End Game</h2>
+    <form id="end">
+      <label for="none">Nothing:</label>
+      <input type="radio" name="endGame" value="" id="none"><br>
+      <label for="parked">Parked: </label>
+      <input type="radio" name="endGame" value="" id="parked"><br>
+      <label for="shallow">Hanging on Shallow Cage: </label>
+      <input type="radio" name="endGame" value="" id="shallow"><br>
+      <label for="deep">Hanging on Deep Cage: </label>
+      <input type="radio" name="endGame" value="" id="deep">
+    </form>
+    <br>
+    <button onclick="gatherValues()">Submit</button><br>
+    <br>
+    <div id="qrcode"></div>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script src="gatherValues.js"></script>
+    <script src="qrCode.js"></script>
+</body>
+</html>

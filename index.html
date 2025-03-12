@@ -9,50 +9,50 @@
     <h1>2025 Scouting</h1>
     <form id="teamInfo">
       <label for="teamNumber">Team Number: </label><br>
-      <input type="text" name="teamNumber" value=""><br>
+      <input type="text" name="teamNumber" value="" max="99999" min="0"><br>
       <label for="matchNumber">Match Number: </label><br>
-      <input type="number" name="matchNumber" value="">
+      <input type="number" name="matchNumber" value="" max="99" min="0">
     </form>
     <h2>Auto</h2>
     <form id="auto">
       <label for="leaveStart">Left starting area: </label>
-      <input type="checkbox" name="leaveStart" value="">
+      <input type="checkbox" name="leaveStart" value=""><br>
       <div>
         <label for="level1Auto">Level 1 / Trought: </label><br>
         <button type="button" onclick="increase('auto', 2)">+</button>
         <input type="number" name="level1Auto" value="0" max="20" min="0">
         <button type="button" onclick="decrease('auto', 2)">-</button>
-      </div>
+      </div><br>
       <div>
         <label for="level2Auto">Level 2: </label><br>
         <button type="button" onclick="increase('auto', 5)">+</button>
         <input type="number" name="level2Auto" value="0" max="20" min="0">
         <button type="button" onclick="decrease('auto', 5)">-</button>
-      </div>
+      </div><br>
       <div>
         <label for="level3Auto">Level 3: </label><br>
         <button type="button" onclick="increase('auto', 8)">+</button> 
         <input type="number" name="level3Auto" value="0" max="20" min="0">
         <button type="button" onclick="decrease('auto', 8)">-</button>
-      </div>
+      </div><br>
       <div>
         <label for="level4Auto">Level 4: </label><br>
         <button type="button" onclick="increase('auto', 11)">+</button>
         <input type="number" name="level4Auto" value="0" max="20" min="0">
         <button type="button" onclick="decrease('auto', 11)">-</button>
-      </div>
+      </div><br>
       <div>
-        <label for="processorAuto">Algea in Processor: </label><br>
+        <label for="processorAuto">Algae in Processor: </label><br>
         <button type="button" onclick="increase('auto', 14)">+</button>
         <input type="number" name="processorAuto" value="0" max="20" min="0">
         <button type="button" onclick="decrease('auto', 14)">-</button>
-      </div>
+      </div><br>
       <div>
-        <label for="netAuto">Algea in the Net: </label><br>
+        <label for="netAuto">Algae in the Net: </label><br>
         <button type="button" onclick="increase('auto', 17)">+</button>
         <input type="number" name="netAuto" value="0" max="20" min="0">
         <button type="button" onclick="decrease('auto', 17)">-</button>
-      </div>
+      </div><br>
     </form>
     <h2>Telop</h2>
     <form id="telop">
@@ -61,37 +61,37 @@
         <button type="button" onclick="increase('telop', 1)">+</button>
         <input type="number" name="level1Telop" value="0" max="20" min="0">
         <button type="button" onclick="decrease('telop', 1)">-</button>
-      </div>
+      </div><br>
       <div>
         <label for="level2Telop">Level 2: </label><br>
         <button type="button" onclick="increase('telop', 4)">+</button>
         <input type="number" name="level2Telop" value="0" max="20" min="0">
         <button type="button" onclick="decrease('telop', 4)">-</button>
-      </div>
+      </div><br>
       <div>
         <label for="level3Telop">Level 3: </label><br>
         <button type="button" onclick="increase('telop', 7)">+</button>
         <input type="number" name="level3Telop" value="0" max="20" min="0">
         <button type="button" onclick="decrease('telop', 7)">-</button>
-      </div>
+      </div><br>
       <div>
         <label for="level4Telop">Level 4: </label><br>
         <button type="button" onclick="increase('telop', 10)">+</button>
         <input type="number" name="level4Telop" value="0" max="20" min="0">
         <button type="button" onclick="decrease('telop', 10)">-</button>
-      </div>
+      </div><br>
       <div>
-        <label for="processorTelop">Algea in Processor: </label><br>
+        <label for="processorTelop">Algae in Processor: </label><br>
         <button type="button" onclick="increase('telop', 13)">+</button>
         <input type="number" name="processorTelop" value="0" max="20" min="0">
         <button type="button" onclick="decrease('telop', 13)">-</button>
-      </div>
+      </div><br>
       <div>
-        <label for="netTelop">Algea in the Net: </label><br>
+        <label for="netTelop">Algae in the Net: </label><br>
         <button type="button" onclick="increase('telop', 16)">+</button>
         <input type="number" name="netTelop" value="0" max="20" min="0">
         <button type="button" onclick="decrease('telop', 16)">-</button>
-      </div>
+      </div><br>
     </form>
     <h2>End Game</h2>
     <form id="end">
@@ -105,7 +105,7 @@
       <input type="radio" name="endGame" value="" id="deep">
     </form>
     <br>
-    <button onclick="submit()">Submit</button><br>
+    <button onclick="submit()" type="button">Submit</button><br>
     <br>
     <div id="qrcode"></div>
     <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
